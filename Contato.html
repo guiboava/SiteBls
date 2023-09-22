@@ -1,0 +1,143 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            
+            <style type="text/css">
+                body{
+                    background-image: url('Fotos/tela_inicial/fundo_tela_inicial.jpg');
+                    background-repeat: no-repeat;
+                }
+                .botao{
+                    color:black;
+                    border: 2px solid black;
+                    padding: 20px 53.2px;
+                    font-style: italic,oblique;
+                    background-image: url('Fotos/tela_inicial/icon_botoes.png');
+                    background-repeat: no-repeat;
+                    background-position: 0%;
+                    text-decoration: none;
+                }
+                tittle{
+                    padding: 23px 90px;
+                    font-size: 200%;
+                    background-color: white;
+                    color: black;
+                    background-image: url('Fotos/tela_inicial/imagem_titulo.png');
+                    background-repeat: no-repeat;
+                    background-size: 74px;
+                    font-weight: bold;
+                }
+                h1{
+                    padding: 10px 1px;
+                    font-size: 100%;
+                    border-style: double;
+                    width: 1050px;
+                }
+                .link_geral{
+                    font-family: sans-serif;
+                    font-style: italic,oblique;
+                    text-decoration: none;
+                    color: black;
+                }
+                .img_inicial{
+                    width:40% ;
+                }
+                .inp_mensagem{
+                    width:1049px;
+                }
+                .inp_300px{
+                    width:300px;
+                }
+                .inp_limit_contato{
+                    width:160px;
+                }
+                .inp_limit_sexo{
+                    width:270px;
+                }
+            </style>
+            <br>
+            <tittle>BLACK LABEL SOCIETY - CONTATO</tittle>
+        </head>
+        <body>
+            <br><br><br><br>
+
+            <a class="botao" href="file:paginaInicial.html"target="-parent">Pagina inicial</a>
+            <a class="botao" href="file:Integrantes.html"target="-parent">Integrantes</a>
+            <a class="botao" href="file:Turnes.html"target="-parent">Turnês</a>
+            <a class="botao" href="file:Discografia.html"target="-parent">Discografia</a>
+            <a class="botao" href="file:Galeria.html"target="-parent">Galeria</a>
+            <a class="botao" href="file:Contato.html"target="-parent">Contato</a>
+            
+            <br><br><br>
+            <h1>
+                <form action="mailto:contato@meusite.com.br" method="post">
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input class="inp_300px" type="text" name="nome" id="nome">
+                    <br>
+
+                    <label for="e_mail">E-mail:</label>
+                    <br>
+                    <input class="inp_300px" type="email" name="e_mail" id="e_mail">
+                    <br>
+
+                    <label for="empresa">Empresa:</label>
+                    <br>
+                    <input class="inp_300px" type="text" name="empresa" id="empresa">
+                    <br>
+
+                    <label for="telefone">Telefone:</label>
+                    <br>
+                    <input type="tel" name="telefone" id="telefone">
+                    <br>
+
+                    <label for="celular">Celular:</label>
+                    <br>
+                    <input type="tel" name="celular" id="celular">
+                    <br>
+
+                    <label for="assunto">Assunto:</label>
+                    <br>
+                    <input class="inp_300px" type="text" name="assunto" id="assunto">
+                    <br>
+
+                    <fieldset class="inp_limit_contato">
+                        <legend>Forma de contato:</legend>
+                        <input type="radio" name="forma_contato" id="Contato_Email" value=
+                        "Telefone" checked="checked">
+                        <label for="Contato_Email">E-mail</label>
+        
+                        <input type="radio" name="forma_contato" id="Contato_Telefone" value=
+                        "Email" checked="checked">
+                        <label for="Contato_Telefone">Telefone</label>
+    
+                    </fieldset>
+
+                    <label for="Horario_contato">Hora de contato:</label>
+                    <br>
+                    <input type="time" name="Horario_contato" id="Horario_contato">
+                    <br>
+                    
+                    <fieldset class="inp_limit_sexo">
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sexo" id="Sexo_Masculino" value=
+                        "masculino" checked="checked">
+                        <label for="Sexo_Masculino">Masculino</label>
+        
+                        <input type="radio" name="sexo" id="Sexo_Feminino" value=
+                        "Feminino" checked="checked">
+                        <label for="Sexo_Feminino">Feminino</label>
+        
+                        <input type="radio" name="sexo" id="Sexo_Outro" value=
+                        "Não Binario" checked="checked">
+                        <label for="Sexo_Outro">Outro</label>
+                    </fieldset>
+                    <label for="Mensagem">Mensagem:</label>
+                    <br>
+                    <input class="inp_mensagem" type="text" name="Mensagem" id="Mensagem">
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetar</button>
+                </form>
+            </h1>
+        </body>
